@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+let num = +prompt("Nhap vao mot so");
+let reversedNum = 0;
+if (isNaN(num) || num <= 0) {
+    console.log("So nhap vao khong hop le");
+} else {
+    while (num > 0) {
+        let digit = num % 10;
+        reversedNum = reversedNum * 10 + digit;
+        num = Math.floor(num / 10);
+    }
+    console.log(reversedNum);
+}
+</script>
+</html>

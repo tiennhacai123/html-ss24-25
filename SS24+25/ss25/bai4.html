@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let n = +prompt("Nhap vao 1 so nguyen duong n");
+    let tong = 0;
+    let tich = 1;
+    if(isNaN(n)||n<=0){
+        console.log("So khong hop le");        
+    }else{
+        for(let i = 1;i<=n;i++){
+            tich*=i;
+            tong+=tich;
+        }
+        console.log("Tong cua day la",tong);
+    }
+</script>
+</html>

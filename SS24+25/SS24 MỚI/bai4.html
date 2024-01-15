@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+let num = +prompt("Nhap vao 1 so nguyen duong");
+if(isNaN(num)|| num <=0){
+    console.log("So nhap vao khong hop le");
+}else{
+    let sum = 0;
+    let square = 0;
+    for(let i = 2;i<=num;i++){     
+        if(i%2==0){
+            square= Math.pow(i,2);
+            sum += square;
+        }        
+    }
+        if(sum>=num){
+        console.log(sum);
+        console.log("Tong cac so in ra lon hon so duoc nhap");
+    }else{
+        for(let i = 2;i<=num;i++){     
+        if(i%2==0){
+            square= Math.pow(i,2);
+            console.log(i);
+            console.log(sum);
+        }
+    }    
+    }
+}
+</script>
+</html>
